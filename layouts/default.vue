@@ -13,7 +13,6 @@
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-
           <b-nav-item-dropdown text="Lang" right>
             <b-dropdown-item href="#">
               <nuxt-link :to="switchLocalePath('en')">English</nuxt-link>
@@ -38,8 +37,12 @@ export default {
     // eslint-disable-next-line no-console
     console.log(this.$route)
   },
-  methods: {}
+  methods: {},
 }
 </script>
 <style>
+.dropdown-item a {
+  display: inline-block;
+  width: 100%;
+}
 </style>
